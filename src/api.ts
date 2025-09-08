@@ -1,6 +1,9 @@
-import axios from "axios";
+// En src/api.js o similar
+import axios from 'axios';
 
 export const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL, // Usar la URL completa de Railway
-  withCredentials: true
+  baseURL: 'http://localhost:3001/api', // Puerto del nuevo backend
+  timeout: 10000,
 });
+
+// El resto de la configuración igual
