@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Configuración de la URL base del API
-const API_URL = process.env.NODE_ENV === 'production' 
+const API_URL = import.meta.env.PROD
   ? 'https://crm-multimarca-backend-production.up.railway.app/api'
   : 'http://localhost:3001/api';
 
